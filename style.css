@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #13547a  , #80d0c7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.glass {
+    background-color: white;
+    max-height: 100vh;
+    width: 30%;
+    background: linear-gradient(
+     to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3)
+     );
+     border-radius: 2rem;
+     z-index: 2;
+     backdrop-filter: blur(2rem);
+     display: flex;
+     flex-direction: column;
+     /* flex-wrap: wrap; */
+     overflow: hidden;
+}
+
+.dashboard {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem;
+}
+
+.pic {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.sub {
+    font-size: 1.2rem;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.link h2{
+    padding: 0rem 2rem;
+    font-size: 1rem;
+}
+
+.status {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.status input {
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+        border: none;
+        width: 65%;
+        padding: 0.5rem;
+        border-radius: 2rem;
+}
+
+.techs {
+    width: 100%;
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.card img {
+    margin-right: 1rem;
+}
+
+.progress1, .progress2, .progress3 {
+    background: linear-gradient(to right top, #b8e6e1 , #53afa4);
+    height: 25%;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:  rgb(236, 236, 236);
+    position: absolute;
+    left: 80%;
+}
+
+.progress2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:  rgb(236, 236, 236);
+    position: absolute;
+    left: 70%;
+}
+
+.progress3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:  rgb(236, 236, 236);
+    position: absolute;
+    left: 40%;
+}
+
+.card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info h2 {
+    font-weight: 600;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #658ec6 , #468bec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .glass {
+        width: 60%;
+        max-height: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .glass {
+        width: 100%;
+        margin: 1.5rem;
+    }
+
+    .link h2 {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .card img {
+        margin: 0;
+    }
+    
+    .progress1, .progress2, .progress3 {
+        height: 1rem;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+}

@@ -217,6 +217,13 @@ main {
 
 }
 
+@media (max-height: 900px) {
+    .glass {
+        max-height: 100%;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .glass {
